@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a, li{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.mw-100{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+body{
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.SourceSansPro{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    position: absolute;
+    height: 15vh;
+	z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 80vw;
+    left: 10%;
+}
+
+nav.hMenu{
+    display: flex;
+    justify-content: center;
+}
+nav.hMenu a{
+    padding: 7px 1vw;
+    font-size: 16px;
+    color: #fff;
+}
+nav.hMenu a:hover{
+    box-shadow: 0 0 0 1px #fff;
+    border-radius: 15px;
+}
+
+.container-intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.intro-bg{
+    position: absolute;
+    background: url(../img/start-bg.png) no-repeat center top / cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.intro-bg-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 34, 36, 0.5);
+}
+
+
+.container-intro h1{
+    padding-top: 39.76vh;
+    color: #fff;
+    font-size: 35px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.container-intro p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2em;
+    margin-top: 5vh;
+}
+
+.container{
+    width: 74.4vw;
+    padding: 10vh 0;
+}
+
+/* Секция 2 */
+.blockInfo{
+    width: 61vw;
+    margin: 0 19.5vw;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.InfoTXT{
+    width: 34.4vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blockInfo h1{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #363e47;
+}
+p{
+    color: #80858c;
+    line-height: 1.7em;
+}
+.readMore{
+    width: 20%;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 7px 0px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    transition: 0.2s linear;
+}
+.readMore:hover{
+    width: 30%;
+    letter-spacing: 0.3em;
+}
+
+
+/* ======== */
+section.details{
+    background: #f3f3f3;
+    height: 70vh;
+}
+h1.title{
+    color: #333b46;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+.titleBlock p{
+    text-align: center;
+    font-size: 14px;
+    width: 40vw;
+    padding-top: 35px;
+    letter-spacing: 0.1em;
+}
+.titleBlock{
+    padding: 10vh 0;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Секция 3 */
+@font-face {
+    font-family: Pe-icon-7-stroke; /* Гарнитура шрифта */
+    src: url(../fonts/Pe-icon-7-stroke.ttf); /* Путь к файлу со шрифтом */
+}
+
+.icon-tabs{
+    font-family: Pe-icon-7-stroke;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 15.6vw;
+    margin: 0 auto;
+}
+li.icon_item{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    background: #81868e;
+    border-radius: 50px;
+}
+li.icon_item:hover{
+    background: #19bd9a;
+    transition: 0.2s linear;
+}
+li.icon_item.current{
+    background: #19bd9a;
+    transition: 0.2s linear;
+}
+
+.tab_content{
+    width: 75.4vw;
+    margin: 0 auto;
+    margin-top: 60px;
+    letter-spacing: 0.05em;
+}
+.tab_item h2{
+    color: #464646;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.tab_item{
+    display: none;
+}
+.tab_item.current{
+    display: inherit;
+}
+.tabsText{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-p{
+    font-size: 16px;
+    width: 35%;
+}
+.sec-p{
+    font-size: 14px;
+    width: 50%;
+}
+b.green{
+    color: #19bd9a;
+    font-weight: bold;
+}
+
+
+/* Секция 4 ================== */
+section.services{
+    background: #fff;
+    height: 75vh;
+}
+.content-services{
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+}
+.tabber-services{
+    display: flex;
+}
+.vertical-icon-tabs{
+    font-family: Pe-icon-7-stroke;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    margin: 0 auto;
+}
+.vertical-tab_content{
+    width: 28vw;
+    margin-left: 2vw;
+    letter-spacing: 0.05em;
+}
+.tabsText-services{
+    margin-top: 30px;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skillsProgress{
+    width: 37vw;
+    display: flex;
+}
+.skill_item{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2.skill_item_title{
+    margin-top: 25px;
+    color: #81868e;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+}
+
+
+/* Секция 5 ================== */
+section.quote{
+    background: url('/img/quote-bg.png') no-repeat center top / cover;   
+    height: 50vh;
+}
+.quote-bg-overlay{
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.quote-content{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+.quote-content-text{
+    width: 40vw;
+}
+.quote-content-text h1{
+    padding-bottom: 5vh;
+    color: #f3f3f3;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.author{
+    padding-top: 2vh;
+    text-transform: uppercase;
+    color: #b2b3b3;
+    font-size: 14px;
+    height: 4.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quote-author{
+    font-weight: bold;
+}
+span.green{
+    color: #19bd9a;
+}
+.screen{
+    background:url('/img/imac.png') no-repeat;
+    position: relative;
+    top: -12vh;
+    width: 409px;
+    height: 328px;
+}
+
+
+/* Секция 6 ================== */
+section.portfolio{
+    background: #f3f3f3;
+    height: 50vh;
+}
+.tabPortfolio{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.tabPortfolio a{
+    color: #464646;
+    font-size: 16px;
+}
+.tabPortfolio a:hover{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #19bd9a;
+    transition: 0.2s linear;
+}
+
+.portfolioTabs{
+    display: flex;
+    justify-content: center;
+    
+}
